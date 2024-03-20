@@ -7,6 +7,11 @@
     /*border: grey 1px solid; /**/
 }
 
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
 body {
     margin: 38px 87px;
     max-width: 100%;
@@ -63,3 +68,208 @@ header {
     background-color: #fff;
     opacity: 0.7;
 }
+
+.heading-1 {
+    font-size: 48px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.heading-2 {
+    margin-top: 25px;
+    font-size: 40px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.centre-home {
+    margin-top: 225px;
+    text-align: center;
+}
+
+.cta-btn {
+    border: none;
+    background: none;
+    color: #fff;
+}
+
+.home-pg-btn {
+    font-size: 24px;
+    margin-top: 55px;
+    padding: 0 95px;
+    position: relative;
+    font-family: "Noto Serif", serif;
+}
+
+.home-pg-btn:hover {
+    cursor: pointer;
+}
+
+.home-pg-btn::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 15px;
+    border-bottom: #fff 1px solid;
+    width: calc(100% - 116px);
+    left: 60px;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* bottom: -20vh; */ /* Below vh */
+    height: 168px;
+    width: 100%;
+    background-color: #d9d9d9;
+}
+
+.ft-social-txt {
+    font-size: 18px;
+    margin-left: 87px;
+    margin-top: 20px;
+    color: #181818;
+}
+
+.ft-social-txt::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 15px;
+    border-bottom: #181818 1px solid;
+    width: 210px;
+    left: 87px;
+}
+
+.copyright {
+    right: 0;
+    top: 84px;
+    position: absolute;
+    z-index: 2;
+    font-size: 18px;
+    margin-right: 87px;
+    color: #181818;
+}
+
+.copyright::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 15px;
+    border-bottom: #181818 1px solid;
+    width: 363px;
+    right: 0px;
+    z-index: 2;
+}
+
+/* Social Media Icons for Footer */
+/* All icons are from iconify */
+
+.inline-socials {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.ant-design--linkedin-outlined {
+    margin-left: 87px;
+    display: inline-block;
+    width: 2.3em;
+    height: 2.3em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Cpath fill='%23181818' d='M847.7 112H176.3c-35.5 0-64.3 28.8-64.3 64.3v671.4c0 35.5 28.8 64.3 64.3 64.3h671.4c35.5 0 64.3-28.8 64.3-64.3V176.3c0-35.5-28.8-64.3-64.3-64.3m0 736c-447.8-.1-671.7-.2-671.7-.3c.1-447.8.2-671.7.3-671.7c447.8.1 671.7.2 671.7.3c-.1 447.8-.2 671.7-.3 671.7M230.6 411.9h118.7v381.8H230.6zm59.4-52.2c37.9 0 68.8-30.8 68.8-68.8a68.8 68.8 0 1 0-137.6 0c-.1 38 30.7 68.8 68.8 68.8m252.3 245.1c0-49.8 9.5-98 71.2-98c60.8 0 61.7 56.9 61.7 101.2v185.7h118.6V584.3c0-102.8-22.2-181.9-142.3-181.9c-57.7 0-96.4 31.7-112.3 61.7h-1.6v-52.2H423.7v381.8h118.6z'/%3E%3C/svg%3E");
+}
+
+.gg--instagram {
+    margin-left: 35px;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='%23181818'%3E%3Cpath fill-rule='evenodd' d='M12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10m-3 5a3 3 0 1 0 6 0a3 3 0 0 0-6 0' clip-rule='evenodd'/%3E%3Cpath d='M18 5a1 1 0 1 0 0 2a1 1 0 0 0 0-2'/%3E%3Cpath fill-rule='evenodd' d='M5 1a4 4 0 0 0-4 4v14a4 4 0 0 0 4 4h14a4 4 0 0 0 4-4V5a4 4 0 0 0-4-4zm14 2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2' clip-rule='evenodd'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.mdi--github {
+    margin-left: 35px;
+    display: inline-block;
+    width: 2.3em;
+    height: 2.3em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23181818' d='M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2'/%3E%3C/svg%3E");
+}
+
+/* .mdi--github:hover {
+    display: inline-block;
+    width: 2.3em;
+    height: 2.3em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%234b4ab0' d='M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2'/%3E%3C/svg%3E");
+    color: #4b4ab0;
+} */
+/* 
+.github:hover {
+    color: #4b4ab0;
+} */
+
+/* .mdi--github {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%234b4ab0' d='M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2'/%3E%3C/svg%3E");
+    color: #4b4ab0;
+} */
+
+footer p {
+    padding-left: 10px;
+    font-size: 20px;
+    margin: 0;
+}
+
+/*---- I'm archiving this idea ----*/
+/* .animation-container {
+    position: absolute;
+    margin-top: 50px;
+    width: 90%;
+    height: 100%;
+    background-color: grey;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.bubbles {
+    position: relative;
+    display: flex;
+}
+
+.bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(229, 255, 223);
+    margin: 0 4px;
+    box-shadow: 0px 0px 45px 0px rgba(45,255,196,0.9);
+    animation: animate 15s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(100vh) scale(0) translateX(120vh);
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        transform: translateY(calc(-10vh + 100%)) scale(1);
+        opacity: 0;
+    }
+} */
+/*-------------------------------*/
