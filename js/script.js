@@ -1,5 +1,21 @@
-/* ============= SOCIAL ============= */
-/* Changes icon + text colour when hovering */
+/* ============= TYPEWRITER EFFECT ============= */
+/* Typewriter effect for homepage that types out
+ * different titles.
+ */
+
+var typewriter = new Typed('#typewriter', {
+    strings: ['Software Engineer.', '42 Adelaide Graduate.', 'Aspiring Web Developer.'],
+    typeSpeed: 50,
+    backSpeed: 50,
+    backDelay: 2500,
+    startDelay: 0,
+    loop: true
+});
+
+/* ============= SOCIALS ============= */
+/* Changes icon + text colour when hovering over 
+ * social media icons located in the footer. 
+ */
 
 function linkedinHover(isHovering) {
     var text = document.getElementById("linkedin");
