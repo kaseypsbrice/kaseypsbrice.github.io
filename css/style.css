@@ -27,7 +27,7 @@ header {
 }
 
 .site-title {
-    font-size: 24px;
+    font-size: 1.5em;
     margin-right: auto;
     color: #fff;
     text-decoration: none;
@@ -44,12 +44,12 @@ header {
     text-align: center;
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 1.125em;
 }
 
 .language {
     word-spacing: 20px;
-    font-size: 24px;
+    font-size: 1.5em;
     color: #fff;
     opacity: 0.7;
 }
@@ -70,7 +70,15 @@ header {
 }
 
 .heading-1 {
-    font-size: 48px;
+    font-size: 3em;
+    /* Not sure whether this helps, but I'm trying to maintain consistency
+     * across different web browsers for those who use different root font sizes.
+     * I'm converting all of my font-size elements that are in px to em.
+     * 
+     * SizeInEm = currentPxSize / baseFontSize = equivalentEmFontSize
+     * E.g. 48px / 16px = 3em
+     * 16px is a common default font-size.
+     */
     color: #fff;
     font-weight: normal;
 }
@@ -89,7 +97,7 @@ header {
 .heading-2 {
     line-height: 90px;
     margin-top: 25px;
-    font-size: 40px;
+    font-size: 2.5em;
     color: #b1bdff;
     font-weight: normal;
     display: inline;
@@ -101,10 +109,16 @@ header {
 
 .typewriter-container {
     color: #b1bdff;
-    font-size: 40px;
     text-align: center;
     justify-content: center;
 }
+
+.typewriter-container span {
+    font-size: 2.5em;
+}
+/* Typed.js uses a span element for the cursor.
+ * You can check that it's a span element by inspecting the webpage.
+ */
 
 .centre-home {
     margin-top: 225px;
@@ -118,7 +132,7 @@ header {
 }
 
 .home-pg-btn {
-    font-size: 24px;
+    font-size: 1.5em;
     margin-top: 55px;
     padding: 0 95px;
     position: relative;
@@ -154,7 +168,7 @@ footer a {
 }
 
 .ft-social-txt {
-    font-size: 18px;
+    font-size: 1.125em; /* Weirdly precise, I know. */
     margin-left: 87px;
     margin-top: 20px;
     color: #181818;
@@ -175,7 +189,7 @@ footer a {
     top: 84px;
     position: absolute;
     z-index: 2;
-    font-size: 18px;
+    font-size: 1.125em;
     margin-right: 87px;
     color: #181818;
 }
