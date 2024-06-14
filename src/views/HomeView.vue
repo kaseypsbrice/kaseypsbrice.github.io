@@ -4,7 +4,7 @@ import { Icon } from "@iconify/vue";
 
 <template>
   <main>
-    <div class="intro">
+    <div class="title">
         Hi, I'm <span class="coloured-txt">Kasey Brice</span>.
         <div class="subtitle">
             Software developer and 42 Adelaide graduate.<br>
@@ -25,22 +25,11 @@ import { Icon } from "@iconify/vue";
 main {
     margin-top: 13%;
 
-    .intro {
-        font-family: "Montserrat", sans-serif;
-        font-weight: bold;
-        font-size: 64px;
-        letter-spacing: -0.5px;
-        color: #fff;
-
-        .coloured-txt {
-            color: #909cff;
-        }
-        .subtitle {
-            padding-top: 20px;
-            font-weight: normal;
-            font-size: 32px;
-            letter-spacing: normal;
-        }
+    .subtitle {
+        padding-top: 20px;
+        font-weight: normal;
+        font-size: 32px;
+        letter-spacing: normal;
     }
     .social-icons {
         display: flex;

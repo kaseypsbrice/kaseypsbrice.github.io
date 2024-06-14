@@ -6,9 +6,31 @@
     padding: 0;
     box-sizing: border-box;
     /*border: grey 1px solid; /**/
+}
+
+html {
     background-color: #030303;
 }
 
 main {
     margin: 0px 115px;
+}
+
+.title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 64px;
+    letter-spacing: -0.5px;
+    color: #fff;
+
+    .coloured-txt {
+        color: #909cff;
+    }
+}
+
+h2 {
+    z-index: 2;
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff
 }

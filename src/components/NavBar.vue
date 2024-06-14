@@ -1,16 +1,16 @@
 <template>
 	<header>
 		<nav class="top-nav">
-			<div class="title"> <!-- Title of website -->
+			<RouterLink to="/" class="site-title"> <!-- Title of website -->
 				Kasey Brice
-			</div>
+            </RouterLink>
 			<ul class="routes small-caps"> <!-- Navigation links -->
 				<li><RouterLink to="/">home</RouterLink></li>
                 <li><RouterLink to="/about">about</RouterLink></li>
                 <li><RouterLink to="/projects">projects</RouterLink></li>
                 <li><RouterLink to="/blog">blog</RouterLink></li>
 			</ul>
-            <div class="contact-btn small-caps">
+            <div class="contact-btn small-caps"> <!-- Pop-up or page? -->
                 contact
             </div>
 		</nav>
@@ -37,13 +37,18 @@ import { RouterLink } from 'vue-router'
         font-variant: small-caps;
         font-family: "Montserrat", sans-serif;
     }
-    .title {
+    .site-title {
         position: absolute;
         left: 115px;
         color: #fff;
         font-family: "Montserrat Subrayada", sans-serif;
         font-weight: 400;
         font-style: normal;
+        text-decoration: none;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
     .contact-btn {
         position: absolute;
@@ -55,6 +60,10 @@ import { RouterLink } from 'vue-router'
         border-radius: 20px;
         border: solid 1px #000;
         box-shadow: inset 0 4px 4px 5px rgba(0, 0, 0, 0.5);
+        
+        &:hover {
+            cursor: pointer;
+        }
     }
     .routes {
         width: 100%;
