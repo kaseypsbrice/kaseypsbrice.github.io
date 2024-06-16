@@ -18,6 +18,16 @@ import { Icon } from "@iconify/vue";
             <div class="line-top"></div>
             <div class="line-bottom"></div>
         </div>
+        <div class="container">
+            <div class="card">
+                <div class="content">
+                    <h2>00 Libft</h2>
+                    <p style="margin-top: 10px; opacity: 0.6;">
+                        Common functions from the Libc library recoded and compiled using a Makefile.
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
 </template>
 
@@ -82,6 +92,35 @@ main {
             margin-top: 7%;
             z-index: 1;
             background-image: linear-gradient(to bottom, #7f89e0 94%, #000 100%);
+        }
+    }
+    .container {
+        margin-top: 2.1%;
+        width: 100%;
+        height: 100vh;
+        background-color: #2a3c63;
+        position: relative;
+        z-index: 2;
+        overflow-y: scroll;
+        scrollbar-width: none;
+
+        .card {
+            position: relative;
+            z-index: 3;
+            width: 100%;
+            height: 597px;
+            border: solid 1px #535353;
+            border-radius: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            -webkit-backdrop-filter: blur(120px);
+            backdrop-filter: blur(120px);
+            margin-bottom: 50px;
+
+            .content {
+                margin: 3.3% 4%;
+                font-size: 18px;
+                color: #fff;
+            }
         }
     }
 }
