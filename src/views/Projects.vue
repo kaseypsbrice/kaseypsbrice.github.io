@@ -14,7 +14,10 @@ import { Icon } from "@iconify/vue";
                 <Icon icon="akar-icons:link-out" width="1em" height="1em"  style="color: white" />
             </a>
         </div>
-        <div class="gradient-line"></div>
+        <div class="gradient-line">
+            <div class="line-top"></div>
+            <div class="line-bottom"></div>
+        </div>
     </main>
 </template>
 
@@ -60,11 +63,26 @@ main {
         }
     }
     .gradient-line {
-        width: 1px;
-        height: 533px;
-        margin: 17px 264.1px 133px 1px;
-        background-image: linear-gradient(to top, #7f89e0 95%, #000 101%);
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        position: relative;
         margin-inline: auto;
+
+        .line-top, .line-bottom {
+            position: absolute;
+            width: 1px;
+            height: 530px;
+        }
+        .line-top {
+            z-index: 0;
+            background-image: linear-gradient(to top, #7f89e0 95%, #000 101%);
+        }
+        .line-bottom {
+            margin-top: 7%;
+            z-index: 1;
+            background-image: linear-gradient(to bottom, #7f89e0 94%, #000 100%);
+        }
     }
 }
 
