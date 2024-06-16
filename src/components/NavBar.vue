@@ -1,3 +1,8 @@
+<script setup>
+import { RouterLink } from 'vue-router'
+import { Icon } from "@iconify/vue";
+</script>
+
 <template>
 	<header>
 		<nav class="top-nav">
@@ -8,7 +13,10 @@
 				<li><RouterLink to="/">home</RouterLink></li>
                 <li><RouterLink to="/about">about</RouterLink></li>
                 <li><RouterLink to="/projects">projects</RouterLink></li>
-                <li><RouterLink to="/blog">blog</RouterLink></li>
+                <li class="blog-btn"><a href="" target="_blank">blog
+                    <Icon icon="icomoon-free:new-tab" width=".8em" height=".8em"  style="color: white" />
+                    </a>
+                </li>
 			</ul>
             <div class="contact-btn small-caps"> <!-- Pop-up or page? -->
                 contact
@@ -16,10 +24,6 @@
 		</nav>
 	</header>
 </template>
-
-<script setup>
-import { RouterLink } from 'vue-router'
-</script>
 
 <style lang="scss" scoped>
 
@@ -76,6 +80,15 @@ import { RouterLink } from 'vue-router'
             text-decoration: none;
             color: #fff;
             padding: 0px 36px;
+        }
+    }
+    .blog-btn {
+        a {
+            display: flex;
+            align-items: center;
+        }
+        .iconify {
+            margin-left: 10px;
         }
     }
 }

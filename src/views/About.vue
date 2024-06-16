@@ -17,7 +17,7 @@ import { Icon } from "@iconify/vue";
                 <h2>
                     My Story.
                 </h2>
-                <p style="color: #fff; padding-top: 25px;">
+                <p style="color: #fff; padding-top: 25px; font-size: 18px;">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Mauris nisi nunc, tempus ac ex vitae, sagittis pharetra ex. Mauris facilisis ut risus 
                     sollicitudin hendrerit. Integer iaculis urna nunc, quis placerat velit luctus quis. 
@@ -31,7 +31,7 @@ import { Icon } from "@iconify/vue";
                 <h2>
                     Highlights.
                 </h2>
-                <div style="color: #fff; padding-top: 20px;">
+                <div style="color: #fff; padding-top: 20px; font-size: 18px;">
                     <ul>
                         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                         <li>Mauris nisi nunc, tempus ac ex vitae iaculis urna.</li>
@@ -65,6 +65,7 @@ main {
         border-radius: 20px;
         background-color: rgba(0, 0, 0, 0.7);
         position: relative;
+        margin-bottom: 6.3%;
 
         .social-icons {
             position: absolute;

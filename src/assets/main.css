@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*border: grey 1px solid; /**/
 }
 
 html {
@@ -22,10 +21,10 @@ main {
     font-size: 64px;
     letter-spacing: -0.5px;
     color: #fff;
+}
 
-    .coloured-txt {
-        color: #909cff;
-    }
+.coloured-txt {
+    color: #909cff;
 }
 
 h2 {
