@@ -136,7 +136,7 @@ main {
         overflow-y: scroll;
         scrollbar-width: none;
         margin-bottom: 4%;
-        padding-bottom: 45px;
+        padding-bottom: 80px;
     }
 }
 
