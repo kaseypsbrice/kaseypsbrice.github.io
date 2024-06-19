@@ -1,6 +1,7 @@
 <script setup>
 import { Icon } from "@iconify/vue";
 import ProjectCard from "../components/ProjectCard.vue";
+import ContactForm from "../components/ContactForm.vue";
 </script>
 
 <template>
@@ -60,6 +61,7 @@ import ProjectCard from "../components/ProjectCard.vue";
             ctaLink=""
             />
         </div>
+        <ContactForm />
     </main>
 </template>
 
@@ -138,6 +140,18 @@ main {
         margin-bottom: 4%;
         padding-bottom: 80px;
     }
+    // .blur-box {
+    //     // background-color: rgba(0, 0, 0, 0.7);
+    //     -webkit-backdrop-filter: blur(4px);
+    //     backdrop-filter: blur(4px);
+    //     // background-color: blue;
+    //     width: 100%;
+    //     height: 20vh;
+    //     position: absolute;
+    //     bottom: -29%;
+    //     z-index: 7;
+    //     background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0));
+    // }
 }
 
 </style>
