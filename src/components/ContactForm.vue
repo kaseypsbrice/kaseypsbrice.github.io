@@ -69,6 +69,37 @@ async function handleSubmit(event) {
 
 <style lang="scss" scoped>
 
+#form-status {
+    max-width: fit-content;
+    padding: 0 20px;
+    height: 35px;
+    background-color: rgb(180, 255, 211);
+    color: black;
+    font-weight: 600;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 35px;
+    opacity: 0;
+}
+
+// Temporary until I figure something out.
+#form-status.success {
+    padding-bottom: 10px;
+    color: #fff;
+    font-weight: 600;
+}
+
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
 #my-form {
     font-family: "Montserrat", sans-serif;
     top: 50%;
