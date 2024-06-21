@@ -37,7 +37,7 @@ h2 {
 .background-blur {
     top: 0;
     z-index: -1;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100vh;
     -webkit-backdrop-filter: blur(120px);
@@ -46,7 +46,7 @@ h2 {
 }
 
 .bubble-container {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     z-index: -2;

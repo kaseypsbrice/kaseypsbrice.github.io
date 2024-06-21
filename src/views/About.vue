@@ -28,14 +28,15 @@ import { Icon } from "@iconify/vue";
                 <h2>
                     My Story.
                 </h2>
+                <!-- I wrote this up quickly, will probably change later. -->
                 <p style="color: #fff; padding-top: 25px; font-size: 18px;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Mauris nisi nunc, tempus ac ex vitae, sagittis pharetra ex. Mauris facilisis ut risus
-                    sollicitudin hendrerit. Integer iaculis urna nunc, quis placerat velit luctus quis.
+                    My coding journey first began roughly two years ago when I was accepted into 42 Adelaide, a tuition free
+                    coding school originating from France with more than 32 campuses worldwide. From then on, I participated in code-a-thons,
+                    CTF competitions, and other various activities to help build my skills as a programmer. I even had the opportunity to be a mentor
+                    at 42 Adelaide.
                     <br><br>
-                    Donec rhoncus luctus orci quis placerat. Morbi elementum tellus et sem tempus accumsan.
-                    In ornare vitae enim in interdum. Nam sagittis massa et lacinia ultrices.
-                    Nulla nisl enim, ultricies eget pretium vitae, feugiat a elit.
+                    Recently I've been working as a cyber security cadet at Data Action, where I've been able to develop a range of new skills and
+                    learn more about...
                 </p>
             </section>
             <section class="highlights">
@@ -44,14 +45,14 @@ import { Icon } from "@iconify/vue";
                 </h2>
                 <div style="color: #fff; padding-top: 20px; font-size: 18px;">
                     <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                        <li>Mauris nisi nunc, tempus ac ex vitae iaculis urna.</li>
+                        <li></li>
+                        <li>1 of the first 10 people to complete the 42 curriculum in Australia.</li>
                     </ul>
                     <br>
-                    <ul>
-                        <li>Hobbies</li>
+                    <p style="font-weight: 600;">Hobbies</p>
+                    <ul style="padding-top: 1em;">
                         <li>Web development</li>
-                        <li>Cyber security</li>
+                        <li>Drawing</li>
                         <li>3D modelling</li>
                         <li>Learning (human) languages</li>
                     </ul>
@@ -86,12 +87,14 @@ main {
         z-index: 1;
         margin-top: 68.5px;
         width: 100%;
-        height: 466px;
+        min-height: 466px;
+        height: auto;
         border: solid 1px #535353;
         border-radius: 20px;
         background-color: rgba(0, 0, 0, 0.7);
         position: relative;
         margin-bottom: 6.3%;
+        display: flex;
 
         .social-icons {
             position: absolute;
@@ -121,15 +124,15 @@ main {
             float: left;
             margin-left: 10%;
             margin-top: 3.2%;
-            width: 32%;
+            width: 35%;
         }
 
         .highlights {
             position: relative;
             top: 0;
+            margin-left: 10%;
             float: right;
             margin-top: 3.2%;
-            margin-right: 13%;
             width: 32%;
         }
     }

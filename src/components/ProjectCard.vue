@@ -120,6 +120,10 @@ img {
             margin-inline: auto;
             margin-top: 45px;
 
+            :hover {
+                transition: text-shadow 0.2s ease;
+                text-shadow: rgba(240,214,255,0.9) 0px 0px 9px;
+            }
             a {
                 text-decoration: none;
                 color: #fff;
