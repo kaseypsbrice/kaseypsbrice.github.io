@@ -33,6 +33,7 @@ async function handleSubmit(event) {
         status.innerHTML = "Oops! There was a problem submitting your form";
     });
 }
+
 </script>
 
 <template>
@@ -63,8 +64,10 @@ async function handleSubmit(event) {
 <style lang="scss" scoped>
 
 #my-form {
-    top: 20%;
-    transform: translateX(50%);
+    font-family: "Montserrat", sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     position: fixed;
     z-index: 10;
     width: 770px;

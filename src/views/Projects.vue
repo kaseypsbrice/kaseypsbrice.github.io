@@ -159,7 +159,6 @@ main {
         margin-top: 2.1%;
         width: 100%;
         height: 75vh;
-        // background-color: #2a3c63;
         position: relative;
         z-index: 2;
         overflow-y: scroll;
@@ -167,18 +166,6 @@ main {
         margin-bottom: 4%;
         padding-bottom: 80px;
     }
-    // .blur-box {
-    //     // background-color: rgba(0, 0, 0, 0.7);
-    //     -webkit-backdrop-filter: blur(4px);
-    //     backdrop-filter: blur(4px);
-    //     // background-color: blue;
-    //     width: 100%;
-    //     height: 20vh;
-    //     position: absolute;
-    //     bottom: -29%;
-    //     z-index: 7;
-    //     background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0));
-    // }
 }
 
 </style>

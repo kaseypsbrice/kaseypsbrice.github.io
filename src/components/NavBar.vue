@@ -1,6 +1,7 @@
 <script setup>
 import { RouterLink } from 'vue-router'
 import { Icon } from "@iconify/vue";
+import ContactForm from './ContactForm.vue';
 </script>
 
 <template>
@@ -23,6 +24,7 @@ import { Icon } from "@iconify/vue";
             </div>
 		</nav>
 	</header>
+    <ContactForm />
 </template>
 
 <style lang="scss" scoped>
