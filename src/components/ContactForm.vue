@@ -1,6 +1,12 @@
 <script setup>
 import { onMounted } from 'vue';
 
+const emit = defineEmits(['close']);
+
+const closeForm = () => {
+    emit('close');
+};
+
 onMounted(() => {
     var form = document.getElementById("my-form");
     form.addEventListener("submit", handleSubmit);
@@ -52,7 +58,7 @@ async function handleSubmit(event) {
                 <!-- Subject -->
                 <input type="text" name="Subject" required placeholder="Subject" />
                 <button id="submit-btn">submit</button>
-                <button id="cancel-btn">cancel</button>
+                <button id="cancel-btn" @click="closeForm">cancel</button>
             </div>
             <!-- Message -->
             <textarea name="message" required placeholder="Type your message here..." />

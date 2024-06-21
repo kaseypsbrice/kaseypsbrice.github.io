@@ -2,6 +2,19 @@
 import { RouterLink } from 'vue-router'
 import { Icon } from "@iconify/vue";
 import ContactForm from './ContactForm.vue';
+import { ref } from 'vue';
+
+const showContactForm = ref(false);
+
+const toggleContactForm = () => {
+    showContactForm.value = !showContactForm.value;
+};
+
+const closeContactForm = () => {
+    console.log('ContactForm close event triggered!');
+    showContactForm.value = false;
+};
+
 </script>
 
 <template>
@@ -19,12 +32,12 @@ import ContactForm from './ContactForm.vue';
                     </a>
                 </li>
 			</ul>
-            <div class="contact-btn small-caps"> <!-- Pop-up or page? -->
+            <div class="contact-btn small-caps" @click="toggleContactForm"> <!-- Pop-up or page? -->
                 contact
             </div>
 		</nav>
 	</header>
-    <ContactForm />
+    <ContactForm v-if="showContactForm" @close="closeContactForm" />
 </template>
 
 <style lang="scss" scoped>
