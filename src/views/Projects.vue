@@ -1,7 +1,6 @@
 <script setup>
 import { Icon } from "@iconify/vue";
 import ProjectCard from "../components/ProjectCard.vue";
-import ContactForm from "../components/ContactForm.vue";
 </script>
 
 <template>
@@ -28,45 +27,44 @@ import ContactForm from "../components/ContactForm.vue";
         <div class="container">
             <!-- Card 1 -->
             <ProjectCard
-            title="00 Libft"
-            subtitle="Created our own custom bash shell in C."
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisi nunc, tempus ac ex vitae, sagittis pharetra ex. 
-            Mauris facilisis ut risus sollicitudin hendrerit.
+            title="00 Ft_Transcendence"
+            subtitle="Full-stack single page application (SPA) designed to play Pong."
+            description="This group project involved creating an SPA to participate in Pong tournaments. 
+            Every user has their own personal profile where they can add friends, block users, and view their own stats.
             <br><br>
-            Integer iaculis urna nunc, quis placerat velit luctus quis. Donec rhoncus luctus orci quis placerat. 
-            Morbi elementum tellus et sem tempus accumsan."
-            :tags="['C Programming', '42 Adelaide Project', 'Bash', 'Shell']"
+            Coded in Vanilla JavaScript, this application uses a hash-router to load content and is deployable using Docker."
+            :tags="['HTML', 'CSS', 'JavaScript', 'SPA', 'Docker', 'Nginx', 'MariaDB']"
             cta="View this project on GitHub"
-            ctaLink=""
+            ctaLink="https://github.com/kaseypsbrice/ft_transcendence"
+            imgSrc="src/assets/media/altumcode-dMUt0X3f59Q-unsplash.jpg"
             />
             <!-- Card 2 -->
             <ProjectCard 
             title="01 Minishell"
-            subtitle="Created our own custom bash shell in C."
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisi nunc, tempus ac ex vitae, sagittis pharetra ex. 
-            Mauris facilisis ut risus sollicitudin hendrerit.
+            subtitle="A Linux program that mirrors the functionality of Bash."
+            description="Essentially, this is our own custom bash.
             <br><br>
-            Integer iaculis urna nunc, quis placerat velit luctus quis. Donec rhoncus luctus orci quis placerat. 
-            Morbi elementum tellus et sem tempus accumsan."
+            It includes recreations of original built-in commands while also handling redirections, environment variables,
+            and pipes. Signals are used to implement common keyboard shortcuts such as the ones responsible for displaying a new prompt or exiting the shell."
             :tags="['C Programming', '42 Adelaide Project', 'Bash', 'Shell']"
             cta="View this project on GitHub"
-            ctaLink=""
+            ctaLink="https://github.com/kaseypsbrice/Minishell"
+            imgSrc="src/assets/media/pexels-danbuilds-633409.jpg"
             />
             <!-- Card 3 -->
             <ProjectCard 
-            title="02 Transcendence"
-            subtitle="Created our own custom bash shell in C."
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisi nunc, tempus ac ex vitae, sagittis pharetra ex. 
-            Mauris facilisis ut risus sollicitudin hendrerit.
+            title="02 Dimmer Demons"
+            subtitle="A game made in Unity for the Adelaide Game Developers (AGD) SlamJam3."
+            description="First-person horror game in which the player must navigate their home, where the lights are constantly dimming.
+            Their only hope is to find a light switch. However the lights don't stay on for long...<br><br>And there's more than just darkness chasing them.
             <br><br>
-            Integer iaculis urna nunc, quis placerat velit luctus quis. Donec rhoncus luctus orci quis placerat. 
-            Morbi elementum tellus et sem tempus accumsan."
-            :tags="['C Programming', '42 Adelaide Project', 'Bash', 'Shell']"
+            Dimmer Demons is available to download on <a href='https://terminalsniper5.itch.io/dimmer-demons' target='_blank' style='color: #a8b2ff;'>itch.io.</a>"
+            :tags="['C#', 'Unity', 'Game Development', '3D']"
             cta="View this project on GitHub"
-            ctaLink=""
+            ctaLink="https://github.com/kaseypsbrice/SlamJam2023"
+            imgSrc="src/assets/media/DimmerDemonsLogo.png"
             />
         </div>
-        <!-- <ContactForm /> -->
     </main>
 </template>
 

@@ -5,7 +5,7 @@
             <p style="margin-top: 10px; opacity: 0.6;">{{ subtitle }}</p>
             <hr style="color: #535353; margin-top: 20px;">
             <div class="project-details">
-                <div class="img-placeholder"></div>
+                <div class="img-placeholder"><img :src="imgSrc" alt="Project Image"></div>
                 <div class="wrap">
                     <div v-html="description" class="description"></div>
                     <div class="tags">
@@ -33,12 +33,21 @@ defineProps({
     description: String,
     tags: Array,
     cta: String,
-    ctaLink: String
+    ctaLink: String,
+    imgSrc: String
 })
 
 </script>
 
 <style lang="scss" scoped>
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 8;
+    border-radius: 10px;
+}
 
 .card {
     position: relative;
@@ -67,7 +76,8 @@ defineProps({
                 min-width: 450px;
                 width: 38.8%;
                 height: 280px;
-                background-color: rgba(217, 217, 217, 0.7);
+                background-color: rgba(217, 217, 217, 0.1);
+                border-radius: 10px;
             }
 
             .wrap {

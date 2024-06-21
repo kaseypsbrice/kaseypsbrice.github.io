@@ -69,19 +69,28 @@ const closeContactForm = () => {
             cursor: pointer;
         }
     }
+
+    /* I truly just cannot decide what this contact button should look like */
     .contact-btn {
         position: absolute;
         right: 115px;
-        background-color: #1b1e28;
+        background-color: #727ac2;
+        color: white;
+        font-weight: 600;
+        letter-spacing: 1px;
         width: 194px;
         height: 46px;
         line-height: 46px;
         border-radius: 20px;
-        border: solid 1px #000;
-        box-shadow: inset 0 4px 4px 5px rgba(0, 0, 0, 0.5);
+        box-shadow: inset 0 0px 2px 4px rgba(21, 29, 102, 0.5);
         
         &:hover {
             cursor: pointer;
+            transition: background-color 0.3s ease;
+            transition: box-shadow 0.3s ease;
+            color: #000;
+            background-color: white;
+            box-shadow: inset 0 0px 2px 4px rgba(151, 151, 151, 0.5);
         }
     }
     .routes {
