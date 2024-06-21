@@ -33,3 +33,41 @@ h2 {
     font-weight: bold;
     color: #fff
 }
+
+.background-blur {
+    top: 0;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    -webkit-backdrop-filter: blur(120px);
+    backdrop-filter: blur(120px);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.bubble-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    clip-path: inset(0);
+    overflow: hidden;
+    top: 0;
+}
+
+/* I'm aware that the following could've been done better, but I'm in a rush ^^;; */
+.ellipse-right {
+    overflow: hidden;
+    position: fixed;
+    -webkit-filter: blur(120px);
+    filter: blur(120px);
+    box-shadow: inset 0 4px 4px 104px rgba(0, 0, 0, 0.25);
+}
+
+.ellipse-left {
+    overflow: hidden;
+    position: fixed;
+    -webkit-filter: blur(120px);
+    filter: blur(120px);
+    box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}

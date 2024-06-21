@@ -3,27 +3,38 @@ import { Icon } from "@iconify/vue";
 </script>
 
 <template>
+    <div class="background-blur"></div>
+    <div class="bubble-container">
+        <div class="ellipse-right bubble-right"></div>
+        <div class="ellipse-left bubble-left"></div>
+    </div>
     <main>
         <div class="title">
             About <span class="coloured-txt">Me</span>.
         </div>
         <div class="box">
             <div class="social-icons">
-                <a href="https://github.com/kaseypsbrice" target="_blank"><Icon icon="jam:github" height="3em" /></a>
-                <a href="https://www.linkedin.com/in/kaseybrice/" target="_blank"><Icon icon="pajamas:linkedin" height="3em" /></a>
-                <a href="https://k-42.itch.io/" target="_blank"><Icon icon="cib:itch-io" height="3em" /></a>
+                <a href="https://github.com/kaseypsbrice" target="_blank">
+                    <Icon icon="jam:github" height="3em" />
+                </a>
+                <a href="https://www.linkedin.com/in/kaseybrice/" target="_blank">
+                    <Icon icon="pajamas:linkedin" height="3em" />
+                </a>
+                <a href="https://k-42.itch.io/" target="_blank">
+                    <Icon icon="cib:itch-io" height="3em" />
+                </a>
             </div>
             <section class="my-story">
                 <h2>
                     My Story.
                 </h2>
                 <p style="color: #fff; padding-top: 25px; font-size: 18px;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Mauris nisi nunc, tempus ac ex vitae, sagittis pharetra ex. Mauris facilisis ut risus 
-                    sollicitudin hendrerit. Integer iaculis urna nunc, quis placerat velit luctus quis. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Mauris nisi nunc, tempus ac ex vitae, sagittis pharetra ex. Mauris facilisis ut risus
+                    sollicitudin hendrerit. Integer iaculis urna nunc, quis placerat velit luctus quis.
                     <br><br>
-                    Donec rhoncus luctus orci quis placerat. Morbi elementum tellus et sem tempus accumsan. 
-                    In ornare vitae enim in interdum. Nam sagittis massa et lacinia ultrices. 
+                    Donec rhoncus luctus orci quis placerat. Morbi elementum tellus et sem tempus accumsan.
+                    In ornare vitae enim in interdum. Nam sagittis massa et lacinia ultrices.
                     Nulla nisl enim, ultricies eget pretium vitae, feugiat a elit.
                 </p>
             </section>
@@ -52,6 +63,21 @@ import { Icon } from "@iconify/vue";
 
 <style lang="scss" scoped>
 
+.bubble-right {
+    width: 787.3px;;
+    height: 759.6px;;
+    bottom: 0;
+    right: 0;
+    background-image: radial-gradient(circle at 77% 76%, #7f8ec5 17%, #030303 41%);
+}
+.bubble-left {
+    width: 447px;
+    height: 723px;
+    left: -5%;
+    bottom: 0;
+    background-image: radial-gradient(circle at 83% 50%, #7f8ec5 12%, #030303 70%);
+}
+
 main {
     margin-top: 6.3%;
 
@@ -75,20 +101,21 @@ main {
             align-items: center;
             margin-left: 3%;
             margin-top: 3.2%;
-        
+
             .iconify {
                 margin-bottom: 20%;
                 color: #fff;
                 opacity: 0.39;
                 transition: opacity 0.3s ease;
                 background-color: transparent;
-                
+
                 &:hover {
                     cursor: pointer;
                     opacity: 1.0;
                 }
             }
         }
+
         .my-story {
             position: relative;
             float: left;
@@ -96,6 +123,7 @@ main {
             margin-top: 3.2%;
             width: 32%;
         }
+
         .highlights {
             position: relative;
             top: 0;
@@ -106,5 +134,4 @@ main {
         }
     }
 }
-
 </style>

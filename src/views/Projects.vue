@@ -5,6 +5,11 @@ import ContactForm from "../components/ContactForm.vue";
 </script>
 
 <template>
+    <div class="background-blur"></div>
+    <div class="bubble-container">
+        <div class="ellipse-right bubble-right"></div>
+        <div class="ellipse-left bubble-left"></div>
+    </div>
     <main>
         <div class="title">
             <span class="coloured-txt">My</span> Projects.
@@ -61,11 +66,33 @@ import ContactForm from "../components/ContactForm.vue";
             ctaLink=""
             />
         </div>
-        <ContactForm />
+        <!-- <ContactForm /> -->
     </main>
 </template>
 
 <style lang="scss" scoped>
+
+.bubble-container {
+    height: 124%;
+}
+.background-blur {
+    height: 124%;
+}
+.bubble-right {
+    width: 787.3px;;
+    height: 759.6px;;
+    bottom: 0;
+    right: 0;
+    background-image: radial-gradient(circle at 122% 50%, #7f8ec5 25%, #030303 58%);
+}
+.bubble-left {
+    width: 447px;
+    height: 723px;
+    left: 0;
+    bottom: -28%;
+    background-color: #7f8ec5;
+    opacity: 0.9;
+}
 
 main {
     margin-top: 6.3%;
