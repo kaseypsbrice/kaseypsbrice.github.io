@@ -30,13 +30,17 @@ import { Icon } from "@iconify/vue";
                 </h2>
                 <!-- I wrote this up quickly, will probably change later. -->
                 <p style="color: #fff; padding-top: 25px; font-size: 18px;">
-                    My coding journey first began roughly two years ago when I was accepted into 42 Adelaide, a tuition free
-                    coding school originating from France with more than 32 campuses worldwide. From then on, I participated in code-a-thons,
-                    CTF competitions, and other various activities to help build my skills as a programmer. I even had the opportunity to be a mentor
-                    at 42 Adelaide.
+                    Roughly 2 years ago, I joined 42 Adelaide <code>&#8212;</code> a tuition free coding school that had only
+                    just opened up in Australia at the time.
+                    It was certainly a leap of faith on my part. Through it however, I was able to explore new opportunities
+                    within the tech industry. From code-a-thons to CTF competitions, to even being able to mentor those at 42 Adelaide,
+                    I've taken every opportunity to develop my skills further.
                     <br><br>
-                    Recently I've been working as a cyber security cadet at Data Action, where I've been able to develop a range of new skills and
-                    learn more about...
+                    Recently, I've been working as a cyber security cadet at Data Action where it's been my role to identify and
+                    respond to security risks. 
+                    <br><br>
+                    In my own personal time, I've been working on improving my skills in web development and trying to learn more about
+                    UI/UX design.
                 </p>
             </section>
             <section class="highlights">
@@ -45,8 +49,12 @@ import { Icon } from "@iconify/vue";
                 </h2>
                 <div style="color: #fff; padding-top: 20px; font-size: 18px;">
                     <ul>
-                        <li></li>
+                        <li>Cyber Battle Australia finalist.</li>
                         <li>1 of the first 10 people to complete the 42 curriculum in Australia.</li>
+                        <li>
+                            For an overview of how I went about designing this website, I have a README.md
+                            available on <a href='https://github.com/kaseypsbrice/kaseypsbrice.github.io' target='_blank' style='color: #a8b2ff;'>GitHub.</a>
+                        </li>
                     </ul>
                     <br>
                     <p style="font-weight: 600;">Hobbies</p>
@@ -124,7 +132,7 @@ main {
             float: left;
             margin-left: 10%;
             margin-top: 3.2%;
-            width: 35%;
+            width: 38%;
         }
 
         .highlights {
