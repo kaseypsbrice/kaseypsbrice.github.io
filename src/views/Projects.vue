@@ -36,7 +36,7 @@ import ProjectCard from "../components/ProjectCard.vue";
             :tags="['HTML', 'CSS', 'JavaScript', 'SPA', 'Docker', 'Nginx', 'MariaDB']"
             cta="View this project on GitHub"
             ctaLink="https://github.com/kaseypsbrice/ft_transcendence"
-            imgSrc="src/assets/media/altumcode-dMUt0X3f59Q-unsplash.jpg"
+            imgSrc="/altumcode-dMUt0X3f59Q-unsplash.jpg"
             />
             <!-- Card 2 -->
             <ProjectCard 
@@ -49,7 +49,7 @@ import ProjectCard from "../components/ProjectCard.vue";
             :tags="['C Programming', '42 Adelaide Project', 'Bash', 'Shell']"
             cta="View this project on GitHub"
             ctaLink="https://github.com/kaseypsbrice/Minishell"
-            imgSrc="src/assets/media/pexels-danbuilds-633409.jpg"
+            imgSrc="/pexels-danbuilds-633409.jpg"
             />
             <!-- Card 3 -->
             <ProjectCard 
@@ -62,7 +62,7 @@ import ProjectCard from "../components/ProjectCard.vue";
             :tags="['C#', 'Unity', 'Game Development', '3D']"
             cta="View this project on GitHub"
             ctaLink="https://github.com/kaseypsbrice/SlamJam2023"
-            imgSrc="src/assets/media/DimmerDemonsLogo.png"
+            imgSrc="/DimmerDemonsLogo.png"
             />
         </div>
     </main>
