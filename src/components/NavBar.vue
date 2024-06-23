@@ -43,7 +43,9 @@ const changeSelected = (i) => {
 	<header>
 		<nav class="top-nav">
 			<RouterLink to="/" class="site-title"> <!-- Title of website -->
-				Kasey Brice
+				<div :class=' {"selected": selected === 0 } ' @click='changeSelected(0)'>
+                    Kasey Brice
+                </div>
             </RouterLink>
 			<ul class="routes small-caps"> <!-- Navigation links -->
 				<li :class=' {"selected": selected === 0 } ' @click='changeSelected(0)'> <!---->
@@ -86,6 +88,7 @@ const changeSelected = (i) => {
     mask-composite: exclude;
     pointer-events: none;
     transition: left 0.3s ease, width 0.3s ease;
+    box-sizing: border-box;
 }
 
 .top-nav {
