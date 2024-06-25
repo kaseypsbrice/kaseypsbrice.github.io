@@ -39,7 +39,7 @@ import { Icon } from "@iconify/vue";
                     Recently, I've been working as a cyber security cadet at Data Action where it's been my role to identify and
                     respond to security risks. 
                     <br><br>
-                    In my own personal time, I've been working on improving my skills in web development and trying to learn more about
+                    In my own time, I've been working on improving my skills in web development and trying to learn more about
                     UI/UX design.
                 </p>
             </section>

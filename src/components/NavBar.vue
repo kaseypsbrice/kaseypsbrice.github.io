@@ -2,7 +2,7 @@
 import { RouterLink } from 'vue-router'
 import { Icon } from "@iconify/vue";
 import ContactForm from './ContactForm.vue';
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 
 /* Toggles the ContactForm. */
 
@@ -25,17 +25,29 @@ const selected = ref(0);
 const changeSelected = (i) => {
     selected.value = i;
     const highlight = document.getElementsByClassName('select-highlight')[0];
+    const navLinks = document.getElementsByClassName('navLink');
     highlight.style.left = i * 125 + 'px';
 
+    for (let link of navLinks) {
+        link.style.fontWeight = '';
+    }
     if (selected.value === 1) {
         highlight.style.width = '110px';
+        navLinks[1].style.fontWeight = 'bold';
     }
     else if (selected.value === 2) {
         highlight.style.width = '132px';
+        navLinks[2].style.fontWeight = 'bold';
     } else {
         highlight.style.width = '';
+        navLinks[0].style.fontWeight = 'bold';
     }
 };
+
+// Ensures the "home" navLink appears in bold when the page initially loads.
+onMounted(() => {
+    changeSelected(0);
+});
 
 </script>
 
@@ -48,14 +60,14 @@ const changeSelected = (i) => {
                 </div>
             </RouterLink>
 			<ul class="routes small-caps"> <!-- Navigation links -->
-				<li :class=' {"selected": selected === 0 } ' @click='changeSelected(0)'> <!---->
-                    <RouterLink to="/">home</RouterLink>
+				<li :class=' {"selected": selected === 0 } ' @click='changeSelected(0)'>
+                    <RouterLink to="/" class="navLink">home</RouterLink>
                 </li>
-                <li :class=' {"selected": selected === 1 } ' @click='changeSelected(1)'> <!---->
-                    <RouterLink to="/about">about</RouterLink>
+                <li :class=' {"selected": selected === 1 } ' @click='changeSelected(1)'>
+                    <RouterLink to="/about" class="navLink">about</RouterLink>
                 </li>
-                <li :class=' {"selected": selected === 2 } ' @click='changeSelected(2)'> <!---->
-                    <RouterLink to="/projects">projects</RouterLink>
+                <li :class=' {"selected": selected === 2 } ' @click='changeSelected(2)'>
+                    <RouterLink to="/projects" class="navLink">projects</RouterLink>
                 </li>
                 <li class="blog-btn">
                     <a href="" target="_blank">
