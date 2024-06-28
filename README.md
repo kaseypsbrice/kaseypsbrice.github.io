@@ -90,3 +90,4 @@ Here's a list of fixes or improvements that I intend to make going forwards:
 - [ ] Possibly redesign the contact button, since I've had a hard time deciding what it should look like.
 - [ ] Add link to blog.
 - [ ] Change images for the project cards (two of the current images are from [Unsplash](https://unsplash.com/)).
+- [ ] Fix the centring of the ContactForm content.
