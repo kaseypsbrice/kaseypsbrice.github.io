@@ -91,3 +91,4 @@ Here's a list of fixes or improvements that I intend to make going forwards:
 - [ ] Add link to blog.
 - [ ] Change images for the project cards (two of the current images are from [Unsplash](https://unsplash.com/)).
 - [ ] Fix the centring of the ContactForm content.
+- [ ] Make the background resize better on larger screens.
