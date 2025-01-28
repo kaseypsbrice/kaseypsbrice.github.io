@@ -119,8 +119,7 @@ async function handleSubmit(event) {
     display: flex;
 
     .content {
-        margin: 0 70px;
-        margin-top: 45px;
+        margin: auto;
     }
     h2 {
         text-align: center;

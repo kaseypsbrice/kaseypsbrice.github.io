@@ -13,7 +13,7 @@ import { Icon } from "@iconify/vue";
             Hi, I'm <span class="coloured-txt">Kasey Brice</span>.
             <div class="subtitle">
                 Software developer and 42 Adelaide graduate.<br>
-                Currently a cyber security cadet at Data Action.
+                Currently a Graduate Cyber Security Analyst at Data Action.
             </div>
         </div>
         <div class="social-icons">

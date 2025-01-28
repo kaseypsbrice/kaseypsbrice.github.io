@@ -160,9 +160,8 @@ main {
         position: relative;
         z-index: 2;
         overflow-y: scroll;
-        scrollbar-width: none;
+        scrollbar-width: thin;
         margin-bottom: 4%;
-        padding-bottom: 80px;
     }
 }
 

@@ -30,17 +30,16 @@ import { Icon } from "@iconify/vue";
                 </h2>
                 <!-- I wrote this up quickly, will probably change later. -->
                 <p style="color: #fff; padding-top: 25px; font-size: 18px;">
-                    Roughly 2 years ago, I joined 42 Adelaide <code>&#8212;</code> a tuition free coding school that had only
+                    Roughly 3 years ago, I joined 42 Adelaide <code>&#8212;</code> a tuition free coding school that had only
                     just opened up in Australia at the time.
                     It was certainly a leap of faith on my part. Through it however, I was able to explore new opportunities
                     within the tech industry. From code-a-thons to CTF competitions, to even being able to mentor those at 42 Adelaide,
                     I've taken every opportunity to develop my skills further.
                     <br><br>
-                    Recently, I've been working as a cyber security cadet at Data Action where it's been my role to identify and
+                    Recently, I've been working as a Graduate Cyber Security Analyst at Data Action where it's been my role to identify and
                     respond to security risks. 
                     <br><br>
-                    In my own time, I've been working on improving my skills in web development and trying to learn more about
-                    UI/UX design.
+                    In my own time, I've been working on improving my skills in web development and exploring platforms such as Cloudflare.
                 </p>
             </section>
             <section class="highlights">
@@ -57,12 +56,12 @@ import { Icon } from "@iconify/vue";
                         </li>
                     </ul>
                     <br>
-                    <p style="font-weight: 600;">Hobbies</p>
+                    <p style="font-weight: 600;">Hobbies.</p>
                     <ul style="padding-top: 1em;">
                         <li>Web development</li>
                         <li>Drawing</li>
                         <li>3D modelling</li>
-                        <li>Learning (human) languages</li>
+                        <li>Learning languages</li>
                     </ul>
                 </div>
             </section>
